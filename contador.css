@@ -11,14 +11,24 @@
 a {
     text-decoration: none;
 }
-h1 {
+h1, h4 {
     font-size: 2.9em;
     color: var(--primary-color);
 }
-h3 {
-    font-size: 1.8em;
-    font-weight: 300;
+
+h4 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 50px;
+
+}
+
+p {
     color: #ffffffee;
+    font-size: 4em;
+    margin-left: 100px;
+
+
 }
 
 body {
@@ -29,40 +39,41 @@ section.flex-container {
     display: flex;
     flex-direction: column;
     
-    max-width: 400px;
+    max-width: 1100px;
 
+    margin: 40px auto;
+
+    padding: 5px;
+
+}
+section.flex-container header {
+    display: flex;
+    justify-content: space-between;
+    
+    text-align: center;
+    line-height: 3.2em;
+}
+.container {
+    text-align: center;
     margin: 170px auto 0 auto;
 
 }
 
-section.flex-container .txt {
-    text-align: center;
-    line-height: 3.2em;
-}
-form {
+.dates, .numbers {
     display: flex;
-    flex-direction: column;
-
-    width: 80%;
-
-    margin: 5px auto;
+    flex-direction: row;
 }
 
-form input[type=date], button {
-    background-color: var(--secundary-color);
-    color: #ffffffee;
-    
+button {
+    background-color: var(--primary-color);
+    color: #000000ee;
+
     outline: none;
     margin-bottom: 16px;
-    padding: 16px 10px;
+    padding: 16px;
     
     border-radius: 8px;
     border: none;
-}
-
-form button {
-    background-color: var(--primary-color);
-    color: #000000ee;
 
     font-size: 1.3em;
     font-weight: 900;
