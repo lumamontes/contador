@@ -1,4 +1,9 @@
-/* * {
+.dates, .numbers {
+    display: flex;
+    flex-direction: row;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,6 +12,9 @@
     --primary-color: #21EB00;
     --secundary-color: #191A18;
 }
+
+/* 
+
 
 a {
     text-decoration: none;
@@ -59,10 +67,7 @@ section.flex-container header {
 
 }
 
-.dates, .numbers {
-    display: flex;
-    flex-direction: row;
-}
+
 
 button {
     background-color: var(--primary-color);
